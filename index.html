@@ -17,8 +17,15 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png" alt="University Logo"></a>
+            
+            <!-- The hamburger menu icon -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            
             <div class="nav-links" id="navLinks">
+                
+                <!-- The close icon for the navigation menu -->
                 <i class="fa fa-times" onclick="hideMenu()"></i>
+                
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -26,13 +33,13 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+        
 
         <div class="text-box">
             <h1>World's Biggest University</h1>
             <p>Making a website is now one of the easiest things in the world. You just need to learn HTML, CSS,<br> and JavaScript and you are good to go.</p>
-            <a href="" class="hero-btn">Visit Us To Know More</a>
+            <a href="#" class="hero-btn" onclick="visitUs()">Visit Us To Know More</a>
         </div>
     </section>
 
@@ -137,34 +144,45 @@
         <h1>what our student says</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
-        <dev class="row">
-            <div class="testimonial-col">
-                <img src="images/user1.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Mollitia maiores unde facilis laborum, sapiente officiis quidem dolorem repellendus, eum corrupti officia explicabo? 
-                    Veniam porro nam quaerat corrupti. Maxime, temporibus adipisci.
-                </p>
-                <h3>Christine berkley</h3>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa-regular fa-star"></i>
 
-            </div>
-            <div class="testimonial-col">
-                <img src="images/user2.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Mollitia maiores unde facilis laborum, sapiente officiis quidem dolorem repellendus, eum corrupti officia explicabo? 
-                    Veniam porro nam quaerat corrupti. Maxime, temporibus adipisci.
-                </p>
-                <h3>David bayer</h3>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half"></i>            </div>
-        </dev>
+<!--------------------------------------------------------------------------------------------->
+<div class="testimonial-row">
+    <div class="top-row">
+        <img src="images/user1.jpg" alt="">
+        <h3>Christine Berkley</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Mollitia maiores unde facilis laborum, sapiente officiis quidem dolorem repellendus, eum corrupti officia explicabo? 
+        Veniam porro nam quaerat corrupti. Maxime, temporibus adipisci.
+    </p>
+
+</div>
+
+<div class="testimonial-row">
+    <div class="top-row">
+        <img src="images/user2.jpg" alt="">
+        <h3>David bayer</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Mollitia maiores unde facilis laborum, sapiente officiis quidem dolorem repellendus, eum corrupti officia explicabo? 
+        Veniam porro nam quaerat corrupti. Maxime, temporibus adipisci.
+    </p>
+
+</div>
 
     </section>
 
@@ -178,7 +196,15 @@ function showMenu() {
     }
     function hideMenu() {
     navLinks.style.right = "-200px";
+
     }
+
+    // button click event 
+    function visitUs() {
+    alert("You clicked on visit us to know more.");
+}
+
+
 
     </script>
 
